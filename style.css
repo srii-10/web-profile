@@ -80,18 +80,11 @@ body {
     padding-left: 70px;
 }
 
-@media only screen (max-width: 600px) {
-    .article-about {
-        flex-direction: column;
-    }
-}
-
 .page-about {
     display: flex;
     justify-content: space-around;
     padding-top: 70px;
     padding-bottom: 90px;
-    flex-wrap: wrap;
 }
 
 .page-about p {
