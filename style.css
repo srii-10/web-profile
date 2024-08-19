@@ -1,0 +1,207 @@
+/* ini stylesheet */
+
+body {
+    background-color: #FEDEFF;
+}
+
+.name {
+    color: #484C7F;
+    padding-left: 20px;
+    font-size: smaller;
+    font-style: italic;
+}
+
+.nav {
+    background-color: #D9ACF5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    margin: 0;
+}
+
+.navigation {
+  overflow: hidden;
+  padding-right: 15px;
+}
+
+.navigation a {
+  color: #804674;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+    color: #FEDEFF;
+}
+
+.page-home {
+    margin: 40px;
+    padding-left: 65px;
+    padding-top: 80px;
+    padding-bottom: 170px;
+}
+
+.my-photo {
+    height: 250px;
+    width: 230px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #5c5656;
+    transition: transform 0.3s ease-in-out;
+}
+
+.my-photo:hover {
+    transform: scale(1.2);
+}
+
+.page-about {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+    padding-top: 70px;
+    padding-bottom: 90px;
+}
+
+.page-about p {
+    padding-left: 100px;
+    padding-right: 50px;
+    text-align: justify;
+}
+
+.img-1 {
+    padding-right: 120px;
+}
+
+.page-work {
+    margin: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.work {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.project-1 {
+    background-image: url(./assets/project-1.png);
+    height: 150px;
+    width: 250px;
+    background-size: cover;
+    border: 1px solid;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-1:hover {
+    transform: scale(1.2);
+}
+
+.project-2 {
+    background-image: url(./assets/project-2.png);
+    height: 150px;
+    width: 250px;
+    background-size: cover;
+    border: 1px solid;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-2:hover {
+    transform: scale(1.2);
+}
+
+.github-1 {
+    text-decoration: none;
+    color: rgb(45, 89, 184);
+}
+
+.project-3 {
+    background-color: rgba(0,0,0, 0.1);
+    height: 150px;
+    width: 250px;
+    background-size: cover;
+    border: 1px solid;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-3:hover {
+    transform: scale(1.2);
+}
+
+.project-4 {
+    background-color: rgba(0,0,0, 0.1);
+    height: 150px;
+    width: 250px;
+    background-size: cover;
+    border: 1px solid;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-4:hover {
+    transform: scale(1.2);
+}
+
+.center {
+    text-align: center;
+    padding-top: 50px;
+    text-shadow: 0 0 4px #776d6d;
+}
+
+.revou {
+    height: 150px;
+    width: 230px;
+    border: 1px solid;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.revou:hover {
+    transform: scale(1.2);
+}
+
+.certification  p {
+    text-align: center;
+}
+
+.page-contact {
+    padding: 50px;
+}
+
+.my-social-media {
+    text-align: center;
+    font-size: 20px;
+}
+
+.sosmed {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sosmed a:link, .sosmed a:visited {
+    background-color: #f9c6dd;
+    color: #dd4b81;
+    text-align: center;
+    padding: 25px 20px;
+    border-radius: 50%;
+    text-decoration: none;
+    display: inline-block;
+}
+  
+  .sosmed a:hover, .sosmed a:active {
+    background-color: #FFD0D0;
+    color: #d24747;
+}
+
+footer {
+    background-color: #D9ACF5;    
+    font-size: 15px;
+    width: 100%;
+    padding: 1px;
+}
