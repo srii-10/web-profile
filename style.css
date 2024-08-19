@@ -1,5 +1,11 @@
 /* ini stylesheet */
 
+@media only screen (max-width: 600px) {
+    nav {
+        flex-direction: row;
+    }
+}
+
 body {
     background-color: #FEDEFF;
 }
@@ -19,6 +25,7 @@ body {
     position: fixed;
     width: 100%;
     margin: 0;
+    flex-direction: row;
 }
 
 .navigation {
