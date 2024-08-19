@@ -2,6 +2,13 @@
 
 body {
     background-color: #FEDEFF;
+    margin: auto;
+}
+
+@media only screen (max-width: 600px) {
+    .name {
+        text-align: center;
+    }
 }
 
 .name {
@@ -9,6 +16,7 @@ body {
     padding-left: 20px;
     font-size: smaller;
     font-style: italic;
+    text-align: center;
 }
 
 @media only screen (max-width: 600px) {
@@ -24,7 +32,8 @@ body {
     align-items: center;
     position: fixed;
     width: 100%;
-    margin: 0;
+    top: 0;
+    overflow: hidden;
     flex-wrap: wrap;
 }
 
@@ -217,4 +226,5 @@ footer {
     font-size: 15px;
     width: 100%;
     padding: 1px;
+    bottom: 0;
 }
