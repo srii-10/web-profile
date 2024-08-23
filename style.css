@@ -12,7 +12,8 @@ body {
 /* NAVBAR */
 
 .name {
-    color: #484C7F;
+    color: #804674;
+    text-shadow: 2px 3px 5px rgb(253, 253, 253);
     padding-left: 20px;
     font-size: smaller;
     font-style: italic;
@@ -239,6 +240,7 @@ footer {
 
     .navigation a {
         padding: 5px;
+        font-size: 14px;
     }
 
     .page-home {
