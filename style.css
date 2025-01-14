@@ -1,7 +1,7 @@
 /* ini stylesheet */
 
 html {
-    font-family: "DM Serif Text", serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -9,15 +9,18 @@ body {
     margin: auto;
 }
 
-/* NAVBAR */
+main {
+    padding: 0 60px 0 60px;
+}
 
+/* NAVBAR */
 .name {
     color: #804674;
-    text-shadow: 2px 3px 5px rgb(253, 253, 253);
-    padding-left: 20px;
-    font-size: smaller;
+    font-family: "DM Serif Display", serif;
+    font-size: 13px;
     font-style: italic;
-    text-align: center;
+    text-shadow: 2px 3px 5px white;
+    padding-left: 20px;
 }
 
 .nav {
@@ -30,6 +33,7 @@ body {
     top: 0;
     overflow: hidden;
     flex-wrap: wrap;
+    z-index: 999;
 }
 
 .navigation {
@@ -42,6 +46,7 @@ body {
   text-align: center;
   padding: 15px;
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .navigation a:hover {
@@ -49,15 +54,35 @@ body {
 }
 
 /* PAGE HOME */
-
 .page-home {
-    margin: 40px;
-    padding-top: 70px;
-    padding-left: 30px;
-    padding-bottom: 170px;
+    text-align: center;   
+    padding-top: 150px;
+}
+
+.page-home h1 {
+    font-size: 2em;
+    color: black;
+    text-shadow: 2px 2px 10px #606676;
+}
+
+.page-home p {
+    padding-top: 220px;
+}
+
+.page-home svg {
+    padding-bottom: 70px;
+    filter: drop-shadow(0 0 6px black);
 }
 
 /* PAGE ABOUT */
+.page-about {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.page-about h1 {
+    text-align: center;
+}
 
 .my-photo {
     height: 250px;
@@ -68,67 +93,79 @@ body {
 }
 
 .my-photo:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
-.photo {
-    padding-left: 60px;
-}
-
-.page-about {
+.article-about {
+    padding: 30px 10px 0 10px;
     display: flex;
     justify-content: space-around;
-    padding-top: 70px;
-    padding-bottom: 90px;
 }
 
-.page-about p {
+.article-about button {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 8px white;
+    background-color: #D9ACF5;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    transition: box-shadow 0.3s ease;
+}
+
+.article-about a {
+    color: white;
+    padding: 10px 20px 10px 20px;
+}
+
+.article-about .btn:hover {
+    box-shadow: 0 0 8px #E4BAD4;
+}
+
+.cv {
+    padding: 15px 0 0 60px;
+}
+
+.about {
     padding-left: 50px;
-    padding-right: 60px;
     text-align: justify;
 }
 
 /* PAGE WORK */
-
-.page-work {
-    margin: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+.page-projects {
+    padding: 80px 0 80px 0;
+    text-align: center;
 }
 
-.work {
+.article-project {
+    padding-top: 50px;
     display: flex;
     justify-content: space-evenly;
-    text-align: center;
     flex-wrap: wrap;
 }
 
 .project-1 {
-    background-image: url(./assets/project-1.png);
-    height: 150px;
-    width: 250px;
+    width: 40%;
     background-size: cover;
-    border: 1px solid;
+    border: 1px solid #D9ACF5;
     border-radius: 5px;
     transition: transform 0.3s ease-in-out;
 }
 
 .project-1:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .project-2 {
-    background-image: url(./assets/project-2.png);
-    height: 150px;
-    width: 250px;
+    width: 40%;
     background-size: cover;
-    border: 1px solid;
+    border: 1px solid #D9ACF5;
     border-radius: 5px;
     transition: transform 0.3s ease-in-out;
 }
 
 .project-2:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .github-1 {
@@ -138,42 +175,81 @@ body {
 
 .project-3 {
     background-color: rgba(0,0,0, 0.1);
-    height: 150px;
+    height: 110px;
     width: 250px;
     background-size: cover;
-    border: 1px solid;
+    border: 1px solid #D9ACF5;
     border-radius: 5px;
     transition: transform 0.3s ease-in-out;
 }
 
 .project-3:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .project-4 {
     background-color: rgba(0,0,0, 0.1);
-    height: 150px;
+    height: 110px;
     width: 250px;
     background-size: cover;
-    border: 1px solid;
+    border: 1px solid #D9ACF5;
     border-radius: 5px;
     transition: transform 0.3s ease-in-out;
 }
 
 .project-4:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .center {
     text-align: center;
-    padding-top: 50px;
+    padding-top: 30px;
     text-shadow: 0 0 4px #776d6d;
 }
 
+/* PAGE SKILLS */
+.page-skills {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.page-skills article {
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.page-skills svg {
+    width: 40px;
+    margin: 0 20px 0 20px;
+}
+
+.page-skills p {
+    position: relative;
+    bottom: 12px;
+}
+
+.html5 {
+    position: relative;
+    bottom: 2px;
+}
+
+/* CERTIFICATION */
+.certification {
+    text-align: center;
+    padding: 40px 20px 60px 20px;
+}
+
+.certification .certif {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
 .revou {
-    height: 150px;
-    width: 230px;
-    border: 1px solid;
+    width: 55%;
+    border: 1px solid #D9ACF5;
     border-radius: 5px;
     transition: transform 0.3s ease-in-out;
 }
@@ -182,48 +258,73 @@ body {
     transform: scale(1.2);
 }
 
-.certification  p {
-    text-align: center;
+.dicoding {
+    width: 55%;
+    border: 1px solid #D9ACF5;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dicoding:hover {
+    transform: scale(1.2);
 }
 
 /* PAGE CONTACT */
-
 .page-contact {
-    padding: 50px;
+    text-align: center;
+    padding: 50px 0 80px 0;
 }
 
-.my-social-media {
-    text-align: center;
-    font-size: 18px;
+.page-contact h1 {
+    padding-bottom: 70px;
 }
 
 .sosmed {
-    cursor: pointer;
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 15px;
+    padding-bottom: 30px;
 }
 
-.sosmed a:link, .sosmed a:visited {
-    background-color: #f9c6dd;
-    color: #dd4b81;
-    text-align: center;
-    padding: 20px 15px;
-    border-radius: 50%;
-    text-decoration: none;
-    display: inline-block;
+.sosmed a {
+    font-size: 25px;
+    margin: 10px;
 }
-  
-  .sosmed a:hover, .sosmed a:active {
-    background-color: #FFD0D0;
-    color: #d24747;
+
+.fa {
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    transition: filter 0.3s ease;
+}
+
+.sosmed .fa:hover {
+    opacity: 0.8;
+    filter: drop-shadow(0 0 10px #804674);
+}
+
+.fa-whatsapp {
+    color: #70AF85;
+}
+
+.fa-linkedin {
+    color: #007bb5;
+}
+
+.fa-instagram {
+    color: #80558C;
+}
+
+.email-button {
+    color: #046582;
+}
+
+.thanks {
+    color: #804674;
+    text-align: center;
 }
 
 /* FOOTER */
-
 footer {
     background-color: #D9ACF5;    
-    font-size: 15px;
+    font-size: 13px;
     width: 100%;
     padding: 1px;
     bottom: 0;
@@ -247,19 +348,46 @@ footer {
         padding-left: 20px;
     }
 
-    .page-about {
+    .article-about {
         flex-direction: column;
     }
 
     .photo {
         display: flex;
         justify-content: center;
-        padding-left: 0px;
+        padding-left: 0;
     }
 
-    .sosmed {
-        padding: 15px 10  px;
-        font-size: 13px;
+    .cv {
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .about {
+        justify-content: center;
+        padding-left: 0px;
+        text-align: justify;
+    }
+
+    .project-1 {
+        width: 90%;
+    }
+
+    .project-2 {
+        width: 90%;
+    }
+
+    .page-skills svg {
+        width: 20px;
+    }
+
+    .certification .certif {
+        flex-wrap: wrap;
+    }
+
+    .sosmed a {
+        margin: 10px;
     }
 
     footer {
