@@ -19,7 +19,7 @@ main {
     font-family: "DM Serif Display", serif;
     font-size: 13px;
     font-style: italic;
-    text-shadow: 2px 3px 5px white;
+    text-shadow: 3px 3px 6px white;
     padding-left: 20px;
 }
 
@@ -126,6 +126,10 @@ main {
     padding: 15px 0 0 60px;
 }
 
+.cv a {
+    text-decoration: none;
+}
+
 .about {
     padding-left: 50px;
     text-align: justify;
@@ -210,28 +214,17 @@ main {
 /* PAGE SKILLS */
 .page-skills {
     text-align: center;
-    padding: 40px 20px;
+    padding: 50px 20px;
 }
 
 .page-skills article {
-    padding-top: 70px;
+    padding: 80px 0px 40px 0px;
     display: flex;
     justify-content: space-evenly;
 }
 
-.page-skills svg {
-    width: 40px;
-    margin: 0 20px 0 20px;
-}
-
-.page-skills p {
-    position: relative;
-    bottom: 12px;
-}
-
-.html5 {
-    position: relative;
-    bottom: 2px;
+.page-skills img {
+    width: 30%;
 }
 
 /* CERTIFICATION */
@@ -248,7 +241,7 @@ main {
 }
 
 .revou {
-    width: 55%;
+    width: 75%;
     border: 1px solid #D9ACF5;
     border-radius: 5px;
     transition: transform 0.3s ease-in-out;
@@ -258,14 +251,25 @@ main {
     transform: scale(1.2);
 }
 
-.dicoding {
-    width: 55%;
+.dicoding1 {
+    width: 75%;
     border: 1px solid #D9ACF5;
     border-radius: 5px;
     transition: transform 0.3s ease-in-out;
 }
 
-.dicoding:hover {
+.dicoding1:hover {
+    transform: scale(1.2);
+}
+
+.dicoding2 {
+    width: 75%;
+    border: 1px solid #D9ACF5;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dicoding2:hover {
     transform: scale(1.2);
 }
 
@@ -284,36 +288,22 @@ main {
 }
 
 .sosmed a {
-    font-size: 25px;
+    padding: 0px 20px 0px 20px;
     margin: 10px;
-}
-
-.fa {
-    padding: 20px 40px;
-    text-align: center;
     text-decoration: none;
     transition: filter 0.3s ease;
 }
 
-.sosmed .fa:hover {
+.sosmed a:hover {
     opacity: 0.8;
-    filter: drop-shadow(0 0 10px #804674);
+    filter: drop-shadow(0 0 10px white);
 }
 
-.fa-whatsapp {
-    color: #70AF85;
-}
-
-.fa-linkedin {
-    color: #007bb5;
-}
-
-.fa-instagram {
-    color: #80558C;
-}
-
-.email-button {
-    color: #046582;
+.sosmed img {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    transition: filter 0.3s ease;
 }
 
 .thanks {
