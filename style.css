@@ -344,15 +344,27 @@ footer {
     }
 
     .page-skills img {
-        width: 60%;
+        width: 90%;
+    }
+
+    .page-skills .css {
+        padding: 0 10px 0 10px;
+    }
+
+    .page-skills .js {
+        padding-right: 10px;
     }
 
     .certification .certif {
         flex-wrap: wrap;
     }
 
+    .certif img {
+        width: 90%;
+    }
+
     .certif div {
-        padding-top: 10px;
+        padding-top: 20px;
     }
 
     .sosmed a {
