@@ -55,14 +55,13 @@ main {
 
 /* PAGE HOME */
 .page-home {
+    color: black;
     text-align: center;   
     padding-top: 150px;
 }
 
 .page-home h1 {
     font-size: 2em;
-    color: black;
-    text-shadow: 2px 2px 10px #606676;
 }
 
 .page-home p {
@@ -218,7 +217,7 @@ main {
 }
 
 .page-skills article {
-    padding: 80px 0px 40px 0px;
+    padding: 80px 0 40px 0;
     display: flex;
     justify-content: space-evenly;
 }
@@ -237,39 +236,16 @@ main {
     padding-top: 50px;
     display: flex;
     justify-content: space-evenly;
-
 }
 
-.revou {
+.certif img {
     width: 75%;
     border: 1px solid #D9ACF5;
     border-radius: 5px;
     transition: transform 0.3s ease-in-out;
 }
 
-.revou:hover {
-    transform: scale(1.2);
-}
-
-.dicoding1 {
-    width: 75%;
-    border: 1px solid #D9ACF5;
-    border-radius: 5px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.dicoding1:hover {
-    transform: scale(1.2);
-}
-
-.dicoding2 {
-    width: 75%;
-    border: 1px solid #D9ACF5;
-    border-radius: 5px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.dicoding2:hover {
+.certif img:hover {
     transform: scale(1.2);
 }
 
@@ -288,7 +264,7 @@ main {
 }
 
 .sosmed a {
-    padding: 0px 20px 0px 20px;
+    padding: 0 20px 0 20px;
     margin: 10px;
     text-decoration: none;
     transition: filter 0.3s ease;
@@ -300,8 +276,7 @@ main {
 }
 
 .sosmed img {
-    height: 40px;
-    width: 40px;
+    width: 3.5%;
     text-align: center;
     transition: filter 0.3s ease;
 }
@@ -368,16 +343,28 @@ footer {
         width: 90%;
     }
 
-    .page-skills svg {
-        width: 20px;
+    .page-skills img {
+        width: 60%;
     }
 
     .certification .certif {
         flex-wrap: wrap;
     }
 
+    .certif div {
+        padding-top: 10px;
+    }
+
+    .sosmed a {
+        padding: 0 10px 0 10px;
+    }    
+
     .sosmed a {
         margin: 10px;
+    }
+
+    .sosmed img {
+        width: 8%;
     }
 
     footer {
